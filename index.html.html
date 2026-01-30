@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ashwitha portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI", Arial, sans-serif;
+}
+
+body{
+  background:#f4f6f8;
+  color:#1f2937;
+  line-height:1.6;
+  padding:30px;
+}
+
+/* MAIN COLOR THEME */
+:root{
+  --main-color:#2563eb;
+  --light-bg:#f0f6ff;
+}
+
+/* MAIN RESUME */
+.resume{
+  max-width:950px;
+  margin:auto;
+  background:white;
+  border-radius:12px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.12);
+  padding:25px 28px;
+}
+
+/* HEADER */
+.header{
+  display:flex;
+  align-items:center;
+  gap:25px;
+  margin-bottom:15px;
+}
+
+.header img{
+  width:180px;
+  height:180px;
+  object-fit:cover;
+  border-radius:12px;
+  border:4px solid var(--main-color);
+  box-shadow:0 10px 25px rgba(37,99,235,0.3);
+}
+
+.name-box{
+  padding:12px 18px;
+  border-left:6px solid var(--main-color);
+  background:var(--light-bg);
+  border-radius:8px;
+}
+
+.name-box h1{
+  font-size:30px;
+  color:var(--main-color);
+  margin-bottom:5px;
+}
+
+.name-box p{
+  font-size:15px;
+  color:#4b5563;
+}
+
+/* TOP LINE */
+.line{
+  width:100%;
+  height:3px;
+  background:var(--main-color);
+  border-radius:3px;
+  margin:14px 0 22px;
+}
+
+/* CONTENT GRID */
+.content{
+  display:grid;
+  grid-template-columns:1.2fr 0.8fr;
+  gap:30px;
+}
+
+/* SECTION STYLE */
+.section{
+  margin-bottom:18px;
+  padding:12px 14px;
+  background:var(--light-bg);
+  border-left:4px solid var(--main-color);
+  border-radius:7px;
+}
+
+.section h2{
+  font-size:18px;
+  color:var(--main-color);
+  margin-bottom:6px;
+}
+
+.section p{
+  font-size:14px;
+  color:#374151;
+  margin-top:3px;
+}
+
+/* LIST STYLE */
+.list p{
+  margin-left:10px;
+}
+
+/* SKILLS STYLE */
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:8px;
+}
+
+.skill{
+  border:2px solid var(--main-color);
+  padding:7px 16px;
+  border-radius:22px;
+  font-size:13px;
+  color:var(--main-color);
+  background:white;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.skill:hover{
+  background:var(--main-color);
+  color:white;
+}
+
+/* CONTACT */
+.contact p{
+  font-size:14px;
+  margin:5px 0;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  margin-top:20px;
+  font-size:13px;
+  color:#6b7280;
+  border-top:2px solid var(--main-color);
+  padding-top:10px;
+}
+
+/* RESPONSIVE */
+@media(max-width:800px){
+  .header{
+    flex-direction:column;
+    text-align:center;
+  }
+  .content{
+    grid-template-columns:1fr;
+  }
+  .name-box{
+    border-left:none;
+    border-top:5px solid var(--main-color);
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="resume">
+
+  <!-- HEADER -->
+  <div class="header">
+    <img src="profile1.png" alt="Profile Photo">
+    <div class="name-box">
+      <h1>Ashwitha</h1>
+      <p>Final Year BCA Student | Passion for Web Development</p>
+    </div>
+  </div>
+
+  <div class="line"></div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- LEFT COLUMN -->
+    <div>
+
+      <div class="section">
+        <h2>About</h2>
+        <p>
+          I am a BCA student passionate about web development and programming.
+          I am learning front-end technologies and building beginner-level projects.
+          I am eager to learn, improve my skills, and contribute to real-world projects through internships.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Education</h2>
+        <p><b>Bachelor of Computer Applications (BCA)</b></p>
+        <p>Government First Grade College, Thirthahalli, Karnataka</p>
+        <p>Academic Year: 2023 – 2026</p>
+      </div>
+
+      <div class="section">
+        <h2>Strengths</h2>
+        <div class="list">
+          <p>• Quick learner and adaptable</p>  
+          <p>• Strong problem-solving skills</p>
+          <p>• Basic knowledge of programming and web development</p>
+          <p>• Good communication and teamwork skills</p>
+          <p>• Positive attitude and willingness to learn</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div>
+
+      <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+          <div class="skill">HTML & CSS</div>
+          <div class="skill">JavaScript (Basic)</div>
+          <div class="skill">Python Programming</div>
+          <div class="skill">C Programming</div>
+          <div class="skill">C++ Programming</div>
+          <div class="skill">Basic Web Development</div>
+        </div>
+      </div>
+
+      <div class="section contact">
+        <h2>Contact</h2>
+        <p>Email: ashashwitha73@gmail.com</p>
+        <p>Phone: +91 XXXXXXXXXX</p>
+        <p>Location: Thirthahalli, Karnataka</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Ashwitha | Student Portfolio
+  </footer>
+
+</div>
+
+</body>
+</html>
